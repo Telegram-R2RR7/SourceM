@@ -32,9 +32,9 @@ if not Config.ALIVE_NAME:
         LOGS.error(f"- {e}")
 
 try:
-    LOGS.info("⌭ بـدء تنزيـل زدثــون ⌭")
+    LOGS.info("⌭ بـدء تنزيـل @R2RR7 ⌭")
     zedub.loop.run_until_complete(setup_bot())
-    LOGS.info("✓ تـم تنزيـل زدثــون .. بـنجـاح ✓")
+    LOGS.info("✓ تـم تنزيـل  .. بـنجـاح ✓")
 except Exception as e:
     LOGS.error(f"{str(e)}")
     sys.exit()
@@ -63,7 +63,7 @@ async def startup_process():
     await verifyLoggerGroup()
     await load_plugins("plugins")
     await load_plugins("assistant")
-    LOGS.info(f"⌔ تـم تنصيـب زدثــون . . بنجـاح ✓ \n⌔ لـ إظهـار الاوامـر ارسـل (.الاوامر)")
+    LOGS.info(f"⌔ تـم تنصيـب  . . بنجـاح ✓ \n⌔ لـ إظهـار الاوامـر ارسـل (.الاوامر)")
     await verifyLoggerGroup()
     await add_bot_to_logger_group(BOTLOG_CHATID)
     if PM_LOGGER_GROUP_ID != -100:

@@ -18,14 +18,14 @@ __author__ = "ZThon <https://github.com/Zed-Thon/ZelZal>"
 __copyright__ = f"ZThon Copyright (C) 2021 - 2022  {__author__}"
 
 zedub.version = __version__
-LOGS = logging.getLogger("زدثــون")
+LOGS = logging.getLogger("M")
 bot = zedub
 
 StartTime = time.time()
 zedversion = "3.1.1"
 
 if Config.UPSTREAM_REPO == "zel":
-    UPSTREAM_REPO_URL = "https://github.com/Zed-Thon/Zelzal"
+    UPSTREAM_REPO_URL = "https://github.com/Telegram-R2RR7/SourceM"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
