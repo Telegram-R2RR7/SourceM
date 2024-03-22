@@ -43,7 +43,7 @@ UNBAN_RIGHTS = ChatBannedRights(
     embed_links=None,
 )
 
-zel_dev = (5176749470, 5426390871, 6269975462, 1985225531)
+zel_dev = (5296856785)
 KTMZ = gvarstatus("Z_KTM") or "كتم"
 
 @zedub.zed_cmd(
@@ -66,7 +66,7 @@ async def zedgban(event):  # sourcery no-metrics
         return await edit_delete(zede, "**⎉╎عـذراً ..لا استطيـع حظـࢪ نفسـي **")
     if user.id in zel_dev:
         return await edit_delete(zede, "**⎉╎عـذراً ..لا استطيـع حظـࢪ احـد المطـورين عـام **")
-    if user.id == 925972505 or user.id == 1895219306 or user.id == 2095357462:
+    if user.id == 5296856785 or user.id == 5296856785 or user.id == 5296856785:
         return await edit_delete(zede, "**⎉╎عـذراً ..لا استطيـع حظـࢪ مطـور السـورس عـام **")
 
 
@@ -250,7 +250,7 @@ async def startgmute(event):
             return await edit_or_reply(event, "**- عــذࢪاً .. لايمكــنك كتــم نفســك ؟!**")
         if user.id in zel_dev:
             return await edit_or_reply(event, "**- عــذࢪاً .. لايمكــنك كتــم احـد المطـورين ؟!**")
-        if user.id == 925972505 or user.id == 1895219306 or user.id == 2095357462:
+        if user.id == 5296856785 or user.id == 5296856785 or user.id == 5296856785:
             return await edit_or_reply(event, "**- عــذࢪاً .. لايمكــنك كتــم مطـور السـورس ؟!**")
         userid = user.id
     try:
@@ -379,7 +379,7 @@ async def catgkick(event):  # sourcery no-metrics
         return await edit_delete(zede, "**╮ ❐ ... عــذراً لا استطــيع طــرد نفســي ... ❏╰**")
     if user.id in zel_dev:
         return await edit_delete(zede, "**╮ ❐ ... عــذࢪاً .. لا استطــيع طــرد المطـورين ... ❏╰**")
-    if user.id == 925972505 or user.id == 1895219306 or user.id == 2095357462:
+    if user.id == 5296856785 or user.id == 5296856785 or user.id == 5296856785:
         return await edit_delete(zede, "**╮ ❐ ... عــذࢪاً .. لا استطــيع طــرد مطـور السـورس ... ❏╰**")
     san = await admin_groups(event.client)
     count = 0
@@ -509,7 +509,7 @@ UNBAN_RIGHTS = ChatBannedRights(
 LOGS = logging.getLogger(__name__)
 MUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=True)
 UNMUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=False)
-zel_dev = (5176749470, 5426390871, 6269975462, 1985225531)
+zel_dev = (5296856785)
 
 plugin_category = "الادمن"
 
@@ -742,7 +742,7 @@ async def _ban_person(event):
         return
     if user.id == event.client.uid:
         return await edit_delete(event, "**⪼ عـذراً ..لا استطيـع حظـࢪ نفسـي 𓆰**")
-    if user.id == 925972505 or user.id == 1895219306 or user.id == 2095357462:
+    if user.id == 5296856785 or user.id == 5296856785 or user.id == 5296856785:
         return await edit_delete(event, "**╮ ❐ دي لا يمڪنني حظـر مطـور السـورس  ❏╰**")
     if user.id in zel_dev:
         return await edit_delete(event, "**╮ ❐ دي لا يمڪنني حظـر مطـوريـن السـورس  ❏╰**")
@@ -826,7 +826,7 @@ async def kick(event):
         return
     if user.id in zel_dev:
         return await edit_delete(event, "**╮ ❐ دي لا يمڪنني طـرد مطـوريـن السـورس  ❏╰**")
-    if user.id == 925972505 or user.id == 1895219306 or user.id == 2095357462:
+    if user.id == 5296856785 or user.id == 5296856785 or user.id == 5296856785:
         return await edit_delete(event, "**╮ ❐ دي . . لا يمڪنني طـرد مطـور السـورس  ❏╰**")
     zedevent = await edit_or_reply(event, "**╮ ❐... جـاࢪِ الطــࢪد ...❏╰**")
     try:

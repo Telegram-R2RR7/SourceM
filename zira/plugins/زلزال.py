@@ -114,7 +114,7 @@ async def _(event):
                 zilzal = zelzal.text
                 if "above 50MB" in zelzal.text:
                     aa = zilzal.replace(".apk filesize is above 50MB so you can download only using link", "**- حجم التطبيق اكبر من 50MB ؟!\n- قم بتحميل التطبيق عبـر البوت\n- ادخل للبوت @uploadbot وارسل الرابـط بالاسفـل**\n\n") 
-                    zz = aa.replace(" if you still want it as file copy the link and send to @UploadBot", "\n\n**- قنـاة السـورس : @ZedThon**") 
+                    zz = aa.replace(" if you still want it as file copy the link and send to @UploadBot", "\n\n**- قنـاة السـورس : @@R2RR7**") 
                     await event.delete()
                     return await borg.send_message(event.chat_id, zz)
                 await event.delete()
@@ -139,7 +139,7 @@ async def _(event):
                 zilzal = zelzal.text
                 if "above 50MB" in zelzal.text:
                     aa = zilzal.replace(".apk filesize is above 50MB so you can download only using link", "**- حجم التطبيق اكبر من 50MB ؟!\n- قم بتحميل التطبيق عبـر البوت\n- ادخل للبوت @uploadbot وارسل الرابـط بالاسفـل**\n\n") 
-                    zz = aa.replace(" if you still want it as file copy the link and send to @UploadBot", "\n\n**- قنـاة السـورس : @ZedThon**") 
+                    zz = aa.replace(" if you still want it as file copy the link and send to @UploadBot", "\n\n**- قنـاة السـورس : @@R2RR7**") 
                     await event.delete()
                     return await borg.send_message(event.chat_id, zz)
                 await event.delete()

@@ -9,7 +9,7 @@ plugin_category = "الترفيه"
 
 # بلاي 
 M = (
-    "**𓆰**  𝙎𝙊𝙐𝙍𝘾𝙀 𝙕𝙏𝙃𝙊𝙉   **العـاب الاونلايـن** 🎮𓆪 \n"
+    "**𓆰**  @R2RR7   **العـاب الاونلايـن** 🎮𓆪 \n"
     "◐━─━─━─━─𝙕─━─━─━─━◐\n\n"
     "  ❶ **⪼**  [حرب الفضاء 🛸](https://t.me/gamee?game=ATARIAsteroids)   \n"
     "  ❷ **⪼**  [لعبة فلابي بيرد 🐥](https://t.me/awesomebot?game=FlappyBird)   \n"
@@ -30,8 +30,8 @@ M = (
     "  ⓱ **⪼**  [جيت واي 🚨](https://t.me/gamee?game=Getaway)   \n"
     "  ⓲ **⪼**  [الالـوان 🔮](https://t.me/gamee?game=ColorHit)   \n"
     "  ⓳ **⪼**  [مدفع الكرات🏮](https://t.me/gamee?game=NeonBlaster)   \n\n\n"
-    "**𓄂-** 𝙎𝙊𝙐𝙍𝘾𝙀 𝘿𝙀𝙑 **⪼**  [𐇮 𝙕𝞝𝙇𝙕𝘼𝙇 آلـۘهہؚيـٰـُ͢ـُ໋۠بـ໋ۘ۠ه 𐇮](t.me/zzzzl1l)   \n"
-    "**𓆰** 𝙎𝙊𝙐𝙍𝘾𝙀 𝙍𝙀𝙋𝙊 **⪼**  [𝙕𝙏𝙃𝙊𝙉](https://t.me/ZThon/102)  "
+    "**𓄂-** مطور السورس **⪼**  [M VS الوزاري](t.me/zzzzl1l)   \n"
+    "**𓆰** قناة السورس**⪼**  [GOAT](https://t.me/R125R)  "
 )
 
 

@@ -20,7 +20,7 @@ LOGS = logging.getLogger(__name__)
 ZDEV = gvarstatus("sudoenable") or "true"
 
 ZelzalDV_cmd = (
-    "[ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗭𝗧𝗛𝗢𝗡 - اوامــر المطـور المســاعد](t.me/ZThon) .\n\n"
+    "[ᯓ M - اوامــر المطـور المســاعد](t.me/R2RR7) .\n\n"
     "**⎉╎قائـمـه اوامـر رفـع المطـور المسـاعـد 🧑🏻‍💻✅ 🦾 :** \n"
     "**- اضغـط ع الامـر للنسـخ ثـم استخـدمهـا بالتـرتيـب** \n\n"
     "**⪼** `.رفع مطور` \n"
@@ -47,7 +47,7 @@ ZelzalDV_cmd = (
     "**- ايقـاف صلاحيـة التحكـم المعطـاه لـ امـر واحـد فقـط او عـدة اوامـر للمطـورين المرفـوعيـن ✓ .. مثـال (.ايقاف تحكم ايدي) او (.ايقاف تحكم ايدي فحص كتم)** \n\n"
     "**⪼** `.التحكم`  /  `.التحكم المعطل` \n"
     "**- لـ عـرض قائمـة بالاوامـر المسمـوحـه والغيـر مسمـوحـه للمطـوريـن التحكـم فيهـا 🛃🚷** \n\n"
-    "\n𓆩 [𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁](t.me/ZThon) 𓆪"
+    "\n𓆩 [M](t.me/R2RR7) 𓆪"
 )
 
 
@@ -276,7 +276,7 @@ async def _(event):  # sourcery no-metrics
         for plugin in input_str:
             if plugin not in PLG_INFO:
                 errors += (
-                    f"`{plugin}` __There is no such plugin in your ZThon__.\n"
+                    f"`{plugin}` __There is no such plugin in your R2RR7__.\n"
                 )
             else:
                 loadcmds += PLG_INFO[plugin]
@@ -366,7 +366,7 @@ async def _(event):  # sourcery no-metrics
         for plugin in input_str:
             if plugin not in PLG_INFO:
                 errors += (
-                    f"`{plugin}` __There is no such plugin in your ZThon__.\n"
+                    f"`{plugin}` __There is no such plugin in your R2RR7__.\n"
                 )
             else:
                 flagcmds += PLG_INFO[plugin]

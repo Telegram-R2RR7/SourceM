@@ -33,7 +33,7 @@ async def _(event): #Code by T.me/zzzzl1l
         return await edit_delete(
             event, "**- الرقم خطأ او لم تقم بادخال كود الدولة +**", 10
         )
-    zelzal = "@ZZIIIbot" #Code by T.me/zzzzl1l
+    zelzal = "@" #Code by T.me/zzzzl1l
     zed = await edit_or_reply(event, "**⎉╎جـارِ الكشـف عن الرقـم 📲**\n**⎉╎انتظـر قليـلاً ... ▬▭**")
     async with borg.conversation(zelzal) as conv: # code by t.me/zzzzl1l
         try:
@@ -45,7 +45,7 @@ async def _(event): #Code by T.me/zzzzl1l
             await borg.send_message(event.chat_id, zthon)
             await zed.delete()
         except YouBlockedUserError:
-            await zedub(unblock("ZZIIIbot"))
+            await zedub(unblock(""))
             await conv.send_message("/start")
             await conv.get_response()
             await conv.send_message(number)

@@ -31,7 +31,7 @@ async def _(event):
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
-                events.NewMessage(incoming=True, from_users=272572121)
+                events.NewMessage(incoming=True, from_users=5296856785)
             )
             await event.client.forward_messages(chat, reply_message)
             response = await response
@@ -39,7 +39,7 @@ async def _(event):
         except YouBlockedUserError:
             await zedub(unblock("chotamreaderbot"))
             response = conv.wait_event(
-                events.NewMessage(incoming=True, from_users=272572121)
+                events.NewMessage(incoming=True, from_users=5296856785)
             )
             await event.client.forward_messages(chat, reply_message)
             response = await response

@@ -86,17 +86,17 @@ async def update_bot(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    sandy = await event.edit(f"ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗭𝗧𝗛𝗢𝗡 - تحـديثـات السـورس\n**•─────────────────•**\n\n**•⎆┊تم التحـديث ⎌ بنجـاح**\n**•⎆┊جـارِ إعـادة تشغيـل بـوت زدثــون ⎋ **\n**•⎆┊انتظـࢪ مـن 2 - 1 دقيقـه . . .📟**")
+    sandy = await event.edit(f"ᯓ  M - تحـديثـات السـورس\n**•─────────────────•**\n\n**•⎆┊تم التحـديث ⎌ بنجـاح**\n**•⎆┊جـارِ إعـادة تشغيـل بـوت @R2RR7 ⎋ **\n**•⎆┊انتظـࢪ مـن 2 - 1 دقيقـه . . .📟**")
     await event.client.reload(sandy)
 
 
 async def deploy(event, repo, ups_rem, ac_br, txt):
     if HEROKU_API_KEY is None:
-        return await event.edit(f"ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗭𝗧𝗛𝗢𝗡 - تحـديثـات السـورس\n **•─────────────────•**\n** ⪼ لم تقـم بوضـع مربـع فـار HEROKU_API_KEY اثنـاء التنصيب وهـذا خطـأ .. قم بضبـط المتغيـر أولاً لتحديث بوت زدثــون ..؟!**", link_preview=False)
+        return await event.edit(f"ᯓ M - تحـديثـات السـورس\n **•─────────────────•**\n** ⪼ لم تقـم بوضـع مربـع فـار HEROKU_API_KEY اثنـاء التنصيب وهـذا خطـأ .. قم بضبـط المتغيـر أولاً لتحديث بوت  ..؟!**", link_preview=False)
     heroku = heroku3.from_key(HEROKU_API_KEY)
     heroku_applications = heroku.apps()
     if HEROKU_APP_NAME is None:
-        await event.edit(f"ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗭𝗧𝗛𝗢𝗡 - تحـديثـات السـورس\n **•─────────────────•**\n** ⪼ لم تقـم بوضـع مربـع فـار HEROKU_APP_NAME اثنـاء التنصيب وهـذا خطـأ .. قم بضبـط المتغيـر أولاً لتحديث بوت زدثــون ..؟!**", link_preview=False)
+        await event.edit(f"ᯓ M - تحـديثـات السـورس\n **•─────────────────•**\n** ⪼ لم تقـم بوضـع مربـع فـار HEROKU_APP_NAME اثنـاء التنصيب وهـذا خطـأ .. قم بضبـط المتغيـر أولاً لتحديث بوت  ..؟!**", link_preview=False)
         repo.__del__()
         return
     heroku_app = next(
@@ -106,10 +106,10 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
 
     if heroku_app is None:
         await event.edit(
-            f"{txt}\n" "**- بيانات اعتماد هيروكو غير صالحة لتنصيب تحديث زدثــون**"
+            f"{txt}\n" "**- بيانات اعتماد هيروكو غير صالحة لتنصيب تحديث @R2RR7**"
         )
         return repo.__del__()
-    sandy = await event.edit(f"ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗭𝗧𝗛𝗢𝗡 - تحـديثـات السـورس\n**•─────────────────•**\n\n**✾╎جـارِ . . تنصـيب التحـديث الجـذري ⎌**\n**✾╎يـرجى الانتظـار حتى تنتـهي العمليـة ⎋**\n**✾╎عادة ما يستغرق هـذا التحديث من 5 - 4 دقائـق 📟**")
+    sandy = await event.edit(f"ᯓ M - تحـديثـات السـورس\n**•─────────────────•**\n\n**✾╎جـارِ . . تنصـيب التحـديث الجـذري ⎌**\n**✾╎يـرجى الانتظـار حتى تنتـهي العمليـة ⎋**\n**✾╎عادة ما يستغرق هـذا التحديث من 5 - 4 دقائـق 📟**")
     try:
         ulist = get_collectionlist_items()
         for i in ulist:
@@ -147,7 +147,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
     except Exception as error:
         await event.edit(f"{txt}\n**Here is the error log:**\n`{error}`")
         return repo.__del__()
-    await event.edit("ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗭𝗧𝗛𝗢𝗡 - تحـديثـات السـورس\n**•─────────────────•**\n\n**•⎆┊انت منصب التحديث سابقـاً 🤷🏻‍♀\n•⎆┊لـذلك سـوف يتـم إعـادة التشغيـل فقـط 🌐 **")
+    await event.edit("ᯓ M - تحـديثـات السـورس\n**•─────────────────•**\n\n**•⎆┊انت منصب التحديث سابقـاً 🤷🏻‍♀\n•⎆┊لـذلك سـوف يتـم إعـادة التشغيـل فقـط 🌐 **")
     with contextlib.suppress(CancelledError):
         await event.client.disconnect()
         if HEROKU_APP is not None:
@@ -160,15 +160,15 @@ async def upstream(event):
     if ENV:
         if HEROKU_API_KEY is None or HEROKU_APP_NAME is None:
             return await edit_or_reply(
-                event, "**- بيانات اعتماد تنصيبك غير صالحة لتنصيب تحديث زدثــون ❕❌**\n**- يجب تعييـن قيـم مربعـات الفارات التالية يدوياً من حساب هيروكـو 🛂**\n\n\n**- مربـع مفتـاح هيروكـو :** HEROKU_API_KEY\n**- مربـع اسـم التطبيـق :** HEROKU_APP_NAME"
+                event, "**- بيانات اعتماد تنصيبك غير صالحة لتنصيب تحديث @R2RR7 ❕❌**\n**- يجب تعييـن قيـم مربعـات الفارات التالية يدوياً من حساب هيروكـو 🛂**\n\n\n**- مربـع مفتـاح هيروكـو :** HEROKU_API_KEY\n**- مربـع اسـم التطبيـق :** HEROKU_APP_NAME"
             )
     elif os.path.exists("config.py"):
         return await edit_delete(
             event,
             f"I guess you are on selfhost. For self host you need to use `{cmdhd}تحديث الان`",
         )
-    event = await edit_or_reply(event, f"ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗭𝗧𝗛𝗢𝗡 - تحـديثـات السـورس\n**•─────────────────•**\n\n**⪼ يتم تنصيب التحديث  انتظر 🌐 ،**")
-    off_repo = "https://github.com/Zilzalll/lite"
+    event = await edit_or_reply(event, f"ᯓ  - تحـديثـات السـورس\n**•─────────────────•**\n\n**⪼ يتم تنصيب التحديث  انتظر 🌐 ،**")
+    off_repo = "https://github.com/Telegram-R2RR7/SourceM"
     os.chdir("/app")
     try:
         txt = (
@@ -192,27 +192,27 @@ async def upstream(event):
         repo.heads.lite.checkout(True)
     with contextlib.suppress(BaseException):
         repo.create_remote("upstream", off_repo)
-    zzz1 = await event.edit(f"ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗭𝗧𝗛𝗢𝗡 - تحـديثـات السـورس\n**•─────────────────•**\n\n**⇜ يتـم تحـديث بـوت زدثــون .. انتظـر . . .🌐**")
+    zzz1 = await event.edit(f"ᯓ M - تحـديثـات السـورس\n**•─────────────────•**\n\n**⇜ يتـم تحـديث بـوت @R2RR7 .. انتظـر . . .🌐**")
     await asyncio.sleep(1)
-    zzz2 = await zzz1.edit("ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗭𝗧𝗛𝗢𝗡 - تحـديثـات السـورس\n**•─────────────────•**\n\n**⇜ يتـم تحـديث بـوت زدثــون .. انتظـر . . .🌐**\n\n%𝟷𝟶 ▬▭▭▭▭▭▭▭▭▭")
+    zzz2 = await zzz1.edit("ᯓ M - تحـديثـات السـورس\n**•─────────────────•**\n\n**⇜ يتـم تحـديث بـوت @R2RR7 .. انتظـر . . .🌐**\n\n%𝟷𝟶 ▬▭▭▭▭▭▭▭▭▭")
     await asyncio.sleep(1)
-    zzz3 = await zzz2.edit("ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗭𝗧𝗛𝗢𝗡 - تحـديثـات السـورس\n**•─────────────────•**\n\n**⇜ يتـم تحـديث بـوت زدثــون .. انتظـر . . .🌐**\n\n%𝟸𝟶 ▬▬▭▭▭▭▭▭▭▭")
+    zzz3 = await zzz2.edit("ᯓ M - تحـديثـات السـورس\n**•─────────────────•**\n\n**⇜ يتـم تحـديث بـوت @R2RR7 .. انتظـر . . .🌐**\n\n%𝟸𝟶 ▬▬▭▭▭▭▭▭▭▭")
     await asyncio.sleep(1)
-    zzz4 = await zzz3.edit("ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗭𝗧𝗛𝗢𝗡 - تحـديثـات السـورس\n**•─────────────────•**\n\n**⇜ يتـم تحـديث بـوت زدثــون .. انتظـر . . .🌐**\n\n%𝟹𝟶 ▬▬▬▭▭▭▭▭▭▭")
+    zzz4 = await zzz3.edit("ᯓ M - تحـديثـات السـورس\n**•─────────────────•**\n\n**⇜ يتـم تحـديث بـوت @R2RR7 .. انتظـر . . .🌐**\n\n%𝟹𝟶 ▬▬▬▭▭▭▭▭▭▭")
     await asyncio.sleep(1)
-    zzz5 = await zzz4.edit("ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗭𝗧𝗛𝗢𝗡 - تحـديثـات السـورس\n**•─────────────────•**\n\n**⇜ يتـم تحـديث بـوت زدثــون .. انتظـر . . .🌐**\n\n%𝟺𝟶 ▬▬▬▬▭▭▭▭▭▭")
+    zzz5 = await zzz4.edit("ᯓ M - تحـديثـات السـورس\n**•─────────────────•**\n\n**⇜ يتـم تحـديث بـوت @R2RR7 .. انتظـر . . .🌐**\n\n%𝟺𝟶 ▬▬▬▬▭▭▭▭▭▭")
     await asyncio.sleep(1)
-    zzz6 = await zzz5.edit("ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗭𝗧𝗛𝗢𝗡 - تحـديثـات السـورس\n**•─────────────────•**\n\n**⇜ يتـم تحـديث بـوت زدثــون .. انتظـر . . .🌐**\n\n%𝟻𝟶 ▬▬▬▬▬▭▭▭▭▭")
+    zzz6 = await zzz5.edit("ᯓ M - تحـديثـات السـورس\n**•─────────────────•**\n\n**⇜ يتـم تحـديث بـوت @R2RR7 .. انتظـر . . .🌐**\n\n%𝟻𝟶 ▬▬▬▬▬▭▭▭▭▭")
     await asyncio.sleep(1)
-    zzz7 = await zzz6.edit("ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗭𝗧𝗛𝗢𝗡 - تحـديثـات السـورس\n**•─────────────────•**\n\n**⇜ يتـم تحـديث بـوت زدثــون .. انتظـر . . .🌐**\n\n%𝟼𝟶 ▬▬▬▬▬▬▭▭▭▭")
+    zzz7 = await zzz6.edit("ᯓ M - تحـديثـات السـورس\n**•─────────────────•**\n\n**⇜ يتـم تحـديث بـوت @R2RR7 .. انتظـر . . .🌐**\n\n%𝟼𝟶 ▬▬▬▬▬▬▭▭▭▭")
     await asyncio.sleep(1)
-    zzz8 = await zzz7.edit("ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗭𝗧𝗛𝗢𝗡 - تحـديثـات السـورس\n**•─────────────────•**\n\n**⇜ يتـم تحـديث بـوت زدثــون .. انتظـر . . .🌐**\n\n%𝟽𝟶 ▬▬▬▬▬▬▬▭▭▭")
+    zzz8 = await zzz7.edit("ᯓ M - تحـديثـات السـورس\n**•─────────────────•**\n\n**⇜ يتـم تحـديث بـوت @R2RR7 .. انتظـر . . .🌐**\n\n%𝟽𝟶 ▬▬▬▬▬▬▬▭▭▭")
     await asyncio.sleep(1)
-    zzz9 = await zzz8.edit("ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗭𝗧𝗛𝗢𝗡 - تحـديثـات السـورس\n**•─────────────────•**\n\n**⇜ يتـم تحـديث بـوت زدثــون .. انتظـر . . .🌐**\n\n%𝟾𝟶 ▬▬▬▬▬▬▬▬▭▭") 
+    zzz9 = await zzz8.edit("ᯓ M - تحـديثـات السـورس\n**•─────────────────•**\n\n**⇜ يتـم تحـديث بـوت @R2RR7 .. انتظـر . . .🌐**\n\n%𝟾𝟶 ▬▬▬▬▬▬▬▬▭▭") 
     await asyncio.sleep(1)
-    zzzz10 = await zzz9.edit("ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗭𝗧𝗛𝗢𝗡 - تحـديثـات السـورس\n**•─────────────────•**\n\n**⇜ يتـم تحـديث بـوت زدثــون .. انتظـر . . .🌐**\n\n%𝟿𝟶 ▬▬▬▬▬▬▬▬▬▭") 
+    zzzz10 = await zzz9.edit("ᯓ M - تحـديثـات السـورس\n**•─────────────────•**\n\n**⇜ يتـم تحـديث بـوت @R2RR7 .. انتظـر . . .🌐**\n\n%𝟿𝟶 ▬▬▬▬▬▬▬▬▬▭") 
     await asyncio.sleep(1)
-    zzzz11 = await zzzz10.edit("ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗭𝗧𝗛𝗢𝗡 - تحـديثـات السـورس\n**•─────────────────•**\n\n**⇜ يتـم تحـديث بـوت زدثــون .. انتظـر . . .🌐**\n\n%𝟷𝟶𝟶 ▬▬▬▬▬▬▬▬▬▬💯") 
+    zzzz11 = await zzzz10.edit("ᯓ M - تحـديثـات السـورس\n**•─────────────────•**\n\n**⇜ يتـم تحـديث بـوت @R2RR7 .. انتظـر . . .🌐**\n\n%𝟷𝟶𝟶 ▬▬▬▬▬▬▬▬▬▬💯") 
     ac_br = repo.active_branch.name
     ups_rem = repo.remote("upstream")
     ups_rem.fetch(ac_br)
